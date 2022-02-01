@@ -1,0 +1,306 @@
+/*
+LA VIDEO
+*/
+
+#video
+{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  transform: translateX(-50%) translateY(-50%);
+  background-size: cover;
+  transition: 0s opacity;
+}
+
+
+/*
+LE CORPS DE LA PAGE
+*/
+
+body {
+  -webkit-background-size:cover;
+  background-size:cover;
+  background-position: center center;
+  height: 100vh;
+  font-family: "Poppins", "sans-serif";
+  src: url('webfonts/Poppins/Poppins-Light.ttf');
+}
+
+@font-face{
+  font-family: 'Poppins';
+  src:url('webfonts/Poppins/Poppins-Light.ttf');
+  font-style : normal;
+}
+
+
+/*
+LA BARRE DE NAVIGATION
+*/
+
+
+nav {
+   /* le menu d'en-tête */
+  padding:0;
+  position: absolute; /* fixée à la page */
+  width: calc(100% - 10px); /* largeur */
+  margin: auto;
+  padding : auto;
+  text-align:  center; /* alignement au centre */
+}
+
+/* en ligne */
+.menu-area li {
+  display: inline-block;
+  list-style-type: none;
+}
+
+.menu-area li a {
+  /* à l'intérieur du menu d'en-tête */
+  color: #FF4500;
+  text-decoration: none;
+  font-weight: bold;
+  letter-spacing: 5px;
+  text-transform: none;
+  display: block;
+  padding: 25px;
+  font-size: 20px;
+  line-height: 15px;
+  position: relative;
+  z-index: 1;
+}
+.menu-area a:hover {
+  /* par-dessus le titre */
+  background: tomato;
+  color: white;
+}
+
+.menu-area a:hover:after {
+  transform: translateY(-50%) rotate(-35deg);
+}
+
+
+/*
+GESTION ET STOCKAGE DES BIENS DE L'ENTREPRISE ALSTOM
+*/
+
+h1{
+  text-align: center;
+  font-size: 40px;
+  /* PADDING : marge intérieure */
+  padding-top : 100px;
+  padding-bottom : 25px;
+  /* MARGIN : marge extérieure */
+  margin-top:10px; /* -hauteur/2 */
+  margin-bottom: 25px;
+  color:#6495ED;
+}
+
+
+/*
+LE TABLEAU AJOUT
+*/
+
+h2{
+  width:50%;
+  border: solid black;
+  /* MARGIN : marge extérieure */
+  margin-bottom : 10px;
+  /* PADDING : marge intérieure */
+  padding : 10px;
+  text-align: center;
+  font-size: 20px;
+  background-color: #6495ED;
+  color: #FFE4C4;
+}
+
+.form-row{
+  /* La ligne des labels */
+  margin-top: 50px; /* -hauteur/2 */
+  margin-bottom: 50px;
+  display: block;
+  width: auto;
+  letter-spacing: 2px;
+  word-spacing : 40px;
+  font-size: 20px;
+  font-weight: bold;
+  color : white;
+  text-align: center;
+}
+
+.form-control{
+  /* La ligne des inputs */
+  margin: auto;
+  display: inline-block;
+  width: auto;
+  text-align: center; /* alignement au centre */
+  word-spacing: 25px;
+}
+
+.btn-primary{
+  /* L'ensemble des boutons*/
+  background-color: #778899;
+  border: none;
+  margin-bottom : 50px;
+  padding: 5px;
+  width: 100%;
+  padding-left: 30px;
+  font-family: cursive;
+  color : #FFE4C4;
+  background-color: #6495ED;
+}
+
+.bouton1{
+  /* Le bouton "valider" */
+  margin-top: 10px;
+  border: none;
+  padding: 10px;
+  width: 100px;
+  color : #FFE4C4;
+  background-color: #6495ED;
+  font-weight: bold;
+}
+
+.bouton2{
+  /* Le bouton "annuler" */
+  margin-top: 10px;
+  border: none;
+  padding: 10px;
+  width: 100px;
+  color : #FFE4C4;
+  background-color: #6495ED;
+  font-weight: bold;
+}
+
+.bouton3{
+  /* Le bouton "modifier" */
+  margin-top: 10px;
+  border: none;
+  padding: 10px;
+  width: 100px;
+  color : #FFE4C4;
+  background-color: red;
+  font-weight: bold;
+}
+
+
+/*
+LE TABLEAU AFFICHAGE
+*/
+
+h3{
+  width:50%;
+  border: solid black;
+
+/* MARGIN : marge extérieure */
+  margin-top:10px; /* -hauteur/2 */
+  margin-bottom: 10px;
+  /* PADDING : marge intérieure */
+  padding : 10px;
+
+  text-align: center;
+  font-size: 20px;
+  background-color: #6495ED;
+  color: #FFE4C4;
+}
+
+.tableau, .tableau tr{
+  margin-top: 10px;
+  width: 80%;
+  text-align : center;
+  color: #FFE4C4;
+  font-weight: bold;
+  background-color : #778899;
+  font-size: 16px;
+}
+
+.trash{
+  width: 36px;
+}
+.edit{
+  width: 36px;
+}
+
+
+/*
+LE FOOTER
+*/
+
+footer .bas{
+  /* pied de page*/
+  background-color: #6495ED;
+  position : fixed;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  border: solid black;
+  bottom : 0;
+  display: flex;
+}
+
+footer img{
+  width: 50px;
+  margin-left : 10px;
+  margin-right : 10px;
+  border-radius: 10px;
+  height: auto;
+}
+
+footer .legal{
+  width: 100%;
+  text-align: center;
+  margin: auto;
+  border: none;
+  color: #FFE4C4;
+  font-weight: 300;
+  letter-spacing: 1px;
+  text-transform: none;
+  display: block;
+  font-size: 14px;
+  line-height: 30px;
+  position: relative;
+  z-index: 1;
+}
+
+footer .copyright{
+  width: 100%;
+  text-align: right;
+  margin: auto;
+  border: none;
+  color: #FFE4C4;
+  font-weight: 300;
+  letter-spacing: 1px;
+  text-transform: none;
+  display: block;
+  padding: 0 25px;
+  font-size: 14px;
+  line-height: 30px;
+  position: relative;
+  z-index: 1;
+}
+
+
+/*
+Page "Mentions Légales"
+*/
+
+h4{
+  width:50%;
+  border: solid black;
+  /* MARGIN : marge extérieure */
+  margin-bottom : 10px;
+  /* PADDING : marge intérieure */
+  padding : 10px;
+  text-align: center;
+  font-size: 20px;
+  background-color: #6495ED;
+  color: #FFE4C4;
+}
+
+h4 input{
+  text-align: right;
+}
